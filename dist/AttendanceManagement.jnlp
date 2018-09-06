@@ -9,7 +9,7 @@
   </information>
   <resources>
     <j2se version="1.6+" java-vm-args="-Djava.library.path="C:\opencv\build\java\x64" "  href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AttendanceManagement.jar" size="2486849" download="eager" />
+    <jar href="AttendanceManagement.jar" size="2561557" download="eager" />
     <jar href="lib\artoolkitplus-android-arm.jar" size="315902" download="eager" />
     <jar href="lib\artoolkitplus-android-arm64.jar" size="378936" download="eager" />
     <jar href="lib\artoolkitplus-android-x86.jar" size="404875" download="eager" />
