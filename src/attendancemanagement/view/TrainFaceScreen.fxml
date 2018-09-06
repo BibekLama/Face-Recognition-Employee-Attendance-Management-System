@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.controller.TrainFaceScreenController">
+   <children>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" styleClass="screen-bar1">
+               <children>
+                  <Label styleClass="emp-sub-title" text="TRAIN EMPLOYEE'S FACE" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #bbbbbb; -fx-border-width: 0 1 0 0;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="cameraDeviceName" text="Camera Device Name:">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../res/images/cam.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fx:id="currentFrame" fitHeight="244.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/cameraBG.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="captureButton" mnemonicParsing="false" onAction="#captureFaceImage" styleClass="label-button" text="CAPTURE">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/camera_sm_hover.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <VBox>
+                           <children>
+                              <HBox style="-fx-border-color: #cccccc; -fx-border-width: 0 0 1 0;">
+                                 <children>
+                                    <Label styleClass="label-title" text="Train Face For:" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="8.0" top="8.0" />
+                                 </padding>
+                                 <children>
+                                    <HBox fx:id="capturedImageBox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" />
+                                    <VBox style="-fx-border-color: #cccccc; -fx-border-width: 0 0 0 1;" HBox.hgrow="ALWAYS">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label styleClass="label-title" text="Name:" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label fx:id="empNameLabel" text="Not Selected" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label styleClass="label-title" text="Employee Code:" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label fx:id="empCodeLabel" text="Not Selected" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label styleClass="label-title" text="Job Category:" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                                   <children>
+                                                      <Label fx:id="jobCatLabel" text="Not Selected" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefWidth="250.0">
+                     <children>
+                        <HBox style="-fx-border-color: #e5e5e5; -fx-border-width: 0 0 1 0;">
+                           <children>
+                              <Label styleClass="project-sub-title" text="EMPLOYEES" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXListView fx:id="employeeList" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" style="-fx-border-color: #bbbbbb; -fx-border-width: 1 0 0 0; -fx-background-color: #e5e5e5;">
+               <children>
+                  <Button fx:id="trainButton" mnemonicParsing="false" onAction="#trainFaceData" styleClass="label-button" text="TRAIN" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

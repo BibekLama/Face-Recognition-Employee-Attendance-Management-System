@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="EmployeeScreen" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.controller.EmployeeScreenController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="450.0" spacing="15.0" style="-fx-border-color: #D6D6D6; -fx-border-width: 0 1 0 0; -fx-padding: 0 0 0 0;">
+         <children>
+            <HBox alignment="CENTER" style="-fx-border-color: #e5e5e5; -fx-border-width: 0 0 1 0;">
+               <children>
+                  <Label styleClass="employee-title" stylesheets="@../res/style.css" text="EMPLOYEE REGISTRATION" />
+               </children>
+               <VBox.margin>
+                  <Insets right="3.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label styleClass="emp-sub-title" stylesheets="@../res/style.css" text="EMPLOYEE PERSONAL INFORMATION" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="EMPLOYEE ID" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="NATIONAL ID" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="FIRST NAME" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="LAST NAME" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="DATE OF BIRTH" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="GENDER" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="MOBILE NUMBER" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="empCodeField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="nationalIdField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="fnameField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="lnameField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" spacing="5.0">
+                           <children>
+                              <ComboBox fx:id="dobField1" prefWidth="65.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                              <ComboBox fx:id="dobField2" prefWidth="80.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                              <ComboBox fx:id="dobField3" prefWidth="70.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <ComboBox fx:id="genderField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="mobileField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label styleClass="emp-sub-title" stylesheets="@../res/style.css" text="JOB INFORMATION" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="JOB TITLE" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="SALARY" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <Label text="EMPLOYEE STATUS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <ComboBox fx:id="jobTitleField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <TextField fx:id="salaryField" prefWidth="175.0" styleClass="textfield-two" stylesheets="@../res/style.css" text="0.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                           <children>
+                              <RadioButton fx:id="activeRadioBtn" mnemonicParsing="false" stylesheets="@../res/style.css" text="Active" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#newEmployeeRegistration" text="NEW">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#editEmpInformation" text="EDIT">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="moreInfoLabel" onMouseClicked="#openRegForm" styleClass="label-button" stylesheets="@../res/style.css" text="More Information..." />
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveEmpInformation" text="SAVE">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="activateButton" mnemonicParsing="false" onAction="#activateEmployee" styleClass="button-green" stylesheets="@../res/style.css" text="ACTIVATE" />
+                        <Button mnemonicParsing="false" onAction="#resetInpuField" styleClass="button-red" stylesheets="@../res/style.css" text="CLEAR" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteEmpInformation" styleClass="button-red" stylesheets="@../res/style.css" text="DELETE" />
+                        <Button fx:id="suspendButton" mnemonicParsing="false" onAction="#suspendEmployee" styleClass="button-red" stylesheets="@../res/style.css" text="SUSPEND" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#reloadEmpTable" text="RELOAD">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#printEmpTable" text="PRINT">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/print.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#exportEmpTable" text="EXPORT">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/excel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="searchField" prefWidth="200.0" promptText="Search..." styleClass="textfield-two" stylesheets="@../res/style.css" />
+                        <Button mnemonicParsing="false" onAction="#showEmployeeDetails" text="Detail">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../res/images/viewicon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="employeeTable" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

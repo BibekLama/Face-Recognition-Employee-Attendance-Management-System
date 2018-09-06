@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AttendanceManagement.jnlp">
+  <information>
+    <title>AttendanceManagement</title>
+    <vendor>netshering</vendor>
+    <description>Employee Attendance With Face Recognition.</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path="C:\opencv\build\java\x64" "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AttendanceManagement.jar" size="2486849" download="eager" />
+    <jar href="lib\artoolkitplus-android-arm.jar" size="315902" download="eager" />
+    <jar href="lib\artoolkitplus-android-arm64.jar" size="378936" download="eager" />
+    <jar href="lib\artoolkitplus-android-x86.jar" size="404875" download="eager" />
+    <jar href="lib\artoolkitplus-android-x86_64.jar" size="399148" download="eager" />
+    <jar href="lib\artoolkitplus-linux-armhf.jar" size="146997" download="eager" />
+    <jar href="lib\artoolkitplus-linux-ppc64le.jar" size="197830" download="eager" />
+    <jar href="lib\artoolkitplus-linux-x86.jar" size="164156" download="eager" />
+    <jar href="lib\artoolkitplus-linux-x86_64.jar" size="179465" download="eager" />
+    <jar href="lib\artoolkitplus-macosx-x86_64.jar" size="178478" download="eager" />
+    <jar href="lib\artoolkitplus-platform.jar" size="2319" download="eager" />
+    <jar href="lib\artoolkitplus-windows-x86.jar" size="128343" download="eager" />
+    <jar href="lib\artoolkitplus-windows-x86_64.jar" size="162356" download="eager" />
+    <jar href="lib\artoolkitplus.jar" size="24090" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\ffmpeg-android-arm.jar" size="12878114" download="eager" />
+    <jar href="lib\ffmpeg-android-arm64.jar" size="13237518" download="eager" />
+    <jar href="lib\ffmpeg-android-x86.jar" size="12854037" download="eager" />
+    <jar href="lib\ffmpeg-android-x86_64.jar" size="12667465" download="eager" />
+    <jar href="lib\ffmpeg-linux-armhf.jar" size="11705922" download="eager" />
+    <jar href="lib\ffmpeg-linux-ppc64le.jar" size="14273108" download="eager" />
+    <jar href="lib\ffmpeg-linux-x86.jar" size="12461068" download="eager" />
+    <jar href="lib\ffmpeg-linux-x86_64.jar" size="13250389" download="eager" />
+    <jar href="lib\ffmpeg-macosx-x86_64.jar" size="12538998" download="eager" />
+    <jar href="lib\ffmpeg-platform.jar" size="2245" download="eager" />
+    <jar href="lib\ffmpeg-windows-x86.jar" size="13729297" download="eager" />
+    <jar href="lib\ffmpeg-windows-x86_64.jar" size="14161357" download="eager" />
+    <jar href="lib\ffmpeg.jar" size="241819" download="eager" />
+    <jar href="lib\flandmark-android-arm.jar" size="40348" download="eager" />
+    <jar href="lib\flandmark-android-arm64.jar" size="43097" download="eager" />
+    <jar href="lib\flandmark-android-x86.jar" size="46154" download="eager" />
+    <jar href="lib\flandmark-android-x86_64.jar" size="45141" download="eager" />
+    <jar href="lib\flandmark-linux-armhf.jar" size="38643" download="eager" />
+    <jar href="lib\flandmark-linux-ppc64le.jar" size="49257" download="eager" />
+    <jar href="lib\flandmark-linux-x86.jar" size="45142" download="eager" />
+    <jar href="lib\flandmark-linux-x86_64.jar" size="45901" download="eager" />
+    <jar href="lib\flandmark-macosx-x86_64.jar" size="45384" download="eager" />
+    <jar href="lib\flandmark-platform.jar" size="2277" download="eager" />
+    <jar href="lib\flandmark-windows-x86.jar" size="35618" download="eager" />
+    <jar href="lib\flandmark-windows-x86_64.jar" size="44147" download="eager" />
+    <jar href="lib\flandmark.jar" size="11804" download="eager" />
+    <jar href="lib\flycapture-linux-armhf.jar" size="206822" download="eager" />
+    <jar href="lib\flycapture-linux-x86.jar" size="252312" download="eager" />
+    <jar href="lib\flycapture-linux-x86_64.jar" size="274856" download="eager" />
+    <jar href="lib\flycapture-platform.jar" size="2233" download="eager" />
+    <jar href="lib\flycapture-windows-x86.jar" size="167021" download="eager" />
+    <jar href="lib\flycapture-windows-x86_64.jar" size="216404" download="eager" />
+    <jar href="lib\flycapture.jar" size="134509" download="eager" />
+    <jar href="lib\javacpp.jar" size="352202" download="eager" />
+    <jar href="lib\javacv-platform.jar" size="2363" download="eager" />
+    <jar href="lib\javacv.jar" size="393255" download="eager" />
+    <jar href="lib\jfoenix-1.2.0.jar" size="2347998" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\libdc1394-linux-armhf.jar" size="133226" download="eager" />
+    <jar href="lib\libdc1394-linux-ppc64le.jar" size="156508" download="eager" />
+    <jar href="lib\libdc1394-linux-x86.jar" size="149451" download="eager" />
+    <jar href="lib\libdc1394-linux-x86_64.jar" size="162097" download="eager" />
+    <jar href="lib\libdc1394-macosx-x86_64.jar" size="188292" download="eager" />
+    <jar href="lib\libdc1394-platform.jar" size="2253" download="eager" />
+    <jar href="lib\libdc1394-windows-x86.jar" size="199341" download="eager" />
+    <jar href="lib\libdc1394-windows-x86_64.jar" size="181708" download="eager" />
+    <jar href="lib\libdc1394.jar" size="30802" download="eager" />
+    <jar href="lib\libfreenect-linux-armhf.jar" size="113303" download="eager" />
+    <jar href="lib\libfreenect-linux-ppc64le.jar" size="229931" download="eager" />
+    <jar href="lib\libfreenect-linux-x86.jar" size="194464" download="eager" />
+    <jar href="lib\libfreenect-linux-x86_64.jar" size="205695" download="eager" />
+    <jar href="lib\libfreenect-macosx-x86_64.jar" size="108307" download="eager" />
+    <jar href="lib\libfreenect-platform.jar" size="2261" download="eager" />
+    <jar href="lib\libfreenect-windows-x86.jar" size="178635" download="eager" />
+    <jar href="lib\libfreenect-windows-x86_64.jar" size="212466" download="eager" />
+    <jar href="lib\libfreenect.jar" size="21956" download="eager" />
+    <jar href="lib\libfreenect2-linux-x86.jar" size="505096" download="eager" />
+    <jar href="lib\libfreenect2-linux-x86_64.jar" size="531639" download="eager" />
+    <jar href="lib\libfreenect2-macosx-x86_64.jar" size="375331" download="eager" />
+    <jar href="lib\libfreenect2-platform.jar" size="2220" download="eager" />
+    <jar href="lib\libfreenect2-windows-x86_64.jar" size="972866" download="eager" />
+    <jar href="lib\libfreenect2.jar" size="24461" download="eager" />
+    <jar href="lib\librealsense-linux-x86.jar" size="465023" download="eager" />
+    <jar href="lib\librealsense-linux-x86_64.jar" size="473604" download="eager" />
+    <jar href="lib\librealsense-macosx-x86_64.jar" size="506139" download="eager" />
+    <jar href="lib\librealsense-platform.jar" size="2231" download="eager" />
+    <jar href="lib\librealsense-windows-x86.jar" size="770269" download="eager" />
+    <jar href="lib\librealsense-windows-x86_64.jar" size="923066" download="eager" />
+    <jar href="lib\librealsense.jar" size="49557" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.41-bin.jar" size="992808" download="eager" />
+    <jar href="lib\opencv-341.jar" size="423917" download="eager" />
+    <jar href="lib\opencv-android-arm.jar" size="19464467" download="eager" />
+    <jar href="lib\opencv-android-arm64.jar" size="22453975" download="eager" />
+    <jar href="lib\opencv-android-x86.jar" size="24526762" download="eager" />
+    <jar href="lib\opencv-android-x86_64.jar" size="24348048" download="eager" />
+    <jar href="lib\opencv-ios-arm64.jar" size="18328348" download="eager" />
+    <jar href="lib\opencv-ios-x86_64.jar" size="20097026" download="eager" />
+    <jar href="lib\opencv-linux-armhf.jar" size="17327777" download="eager" />
+    <jar href="lib\opencv-linux-ppc64le.jar" size="19294583" download="eager" />
+    <jar href="lib\opencv-linux-x86.jar" size="17134297" download="eager" />
+    <jar href="lib\opencv-linux-x86_64.jar" size="17371167" download="eager" />
+    <jar href="lib\opencv-macosx-x86_64.jar" size="18367778" download="eager" />
+    <jar href="lib\opencv-platform.jar" size="2250" download="eager" />
+    <jar href="lib\opencv-windows-x86.jar" size="17919340" download="eager" />
+    <jar href="lib\opencv-windows-x86_64.jar" size="20894439" download="eager" />
+    <jar href="lib\opencv.jar" size="1470649" download="eager" />
+    <jar href="lib\poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="lib\poi-excelant-3.16.jar" size="31218" download="eager" />
+    <jar href="lib\poi-ooxml-3.16.jar" size="1433719" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.16.jar" size="5871746" download="eager" />
+    <jar href="lib\videoinput-platform.jar" size="2168" download="eager" />
+    <jar href="lib\videoinput-windows-x86.jar" size="99077" download="eager" />
+    <jar href="lib\videoinput-windows-x86_64.jar" size="116798" download="eager" />
+    <jar href="lib\videoinput.jar" size="16914" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AttendanceManagement" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="attendancemanagement.AttendanceManagement"  name="AttendanceManagement" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="EmployeeDetailScreen" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.controller.EmployeeDetailScreenController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label styleClass="employee-title" stylesheets="@../res/style.css" text="DETAILED INFORMATION" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="20.0" style="-fx-border-color: #cccccc; -fx-border-width: 1 0 1 0;">
+               <children>
+                  <HBox fx:id="avatarBox" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #cccccc; -fx-border-style: dashed;" />
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="FULL NAME" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="EMAIL" />
+                                 </children>
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="MOBILE NO." />
+                                 </children>
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="fullnameLabel" styleClass="label-text" stylesheets="@../res/style.css" text="fullname" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="emailLabel" styleClass="label-text" stylesheets="@../res/style.css" text="email" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="mobileNoLabel" styleClass="label-text" stylesheets="@../res/style.css" text="mobile" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Separator orientation="VERTICAL" />
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="EMPLOYEE CODE" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="NATIONAL ID" />
+                                 </children>
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="label-title" stylesheets="@../res/style.css" text="ACTIVE ON" />
+                                 </children>
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="employeeCodeLabel" styleClass="label-text" stylesheets="@../res/style.css" text="employee code" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="nationalIDLabel" styleClass="label-text" stylesheets="@../res/style.css" text="national id" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                 <children>
+                                    <Label fx:id="activateDateLabel" styleClass="label-text" stylesheets="@../res/style.css" text="activate date" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </HBox>
+            <ScrollPane fitToWidth="true" prefHeight="500.0" styleClass="myscrollPane" stylesheets="@../res/style.css" VBox.vgrow="ALWAYS">
+               <content>
+                  <HBox spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox style="-fx-border-color: #cccccc; -fx-border-width: 0 1 0 0;">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label styleClass="project-sub-title" stylesheets="@../res/style.css" text="PERSONAL INFORMATION:" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="DATE OF BIRTH" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="GENDER" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="dobLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Date of birth" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="genderLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Gender" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Separator>
+                              <HBox>
+                                 <children>
+                                    <Label styleClass="project-sub-title" stylesheets="@../res/style.css" text="CONTACT INFORMATION:" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="PHONE NO." />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="CITY" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="DISTRICT" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="ZONE" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="ADDRESS" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="phoneNoLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Phone No" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="cityLabel" styleClass="label-text" stylesheets="@../res/style.css" text="City" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="districtLabel" styleClass="label-text" stylesheets="@../res/style.css" text="District" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="zoneLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Zone" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Text fx:id="addressLabel" fill="#575757" strokeType="OUTSIDE" strokeWidth="0.0" text="Address address address asdasdas address address" wrappingWidth="224.12890625">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Separator>
+                              <HBox>
+                                 <children>
+                                    <Label styleClass="project-sub-title" stylesheets="@../res/style.css" text="JOB INFORMATION:" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="JOB TITLE" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="SALARY" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
+                                             <children>
+                                                <Label styleClass="label-title" stylesheets="@../res/style.css" text="STATUS" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="jobTitleLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Job Title" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="salaryLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Salary" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+                                             <children>
+                                                <Label fx:id="statusLabel" styleClass="label-text" stylesheets="@../res/style.css" text="Status" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" minWidth="300.0">
+                                 <children>
+                                    <Label styleClass="project-sub-title" stylesheets="@../res/style.css" text="EMPLOYEE ATTENDANCE HISTROY" underline="true" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <TableView fx:id="attendanceTable" VBox.vgrow="ALWAYS">
+                                 <columns>
+                                    <TableColumn fx:id="dateCol" prefWidth="101.0" text="DATE" />
+                                    <TableColumn fx:id="timeCol" prefWidth="106.0" text="TIME" />
+                                    <TableColumn fx:id="statusCol" prefWidth="91.0" text="STATUS" />
+                                 </columns></TableView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
